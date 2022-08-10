@@ -15,7 +15,7 @@ describe('Testa a rota /favorites ', () => {
       expect(favorite).toBeInTheDocument();
     });
 
-  it('Teste se a página contém as informações sobre a Pokédex', () => {
+  it('Teste se a página renderiza os pokemons favoritados', () => {
     const { history } = renderWithRouter(<App />);
 
     history.push('/pokemons/151');
